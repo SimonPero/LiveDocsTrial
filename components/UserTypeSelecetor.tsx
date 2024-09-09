@@ -20,7 +20,7 @@ const UserTypeSelector = ({
       value={userType}
       onValueChange={(type: UserType) => accessChangeHandler(type)}
     >
-      <SelectTrigger className="w-[180px]">
+      <SelectTrigger className="shad-select">
         <SelectValue placeholder="Theme" />
       </SelectTrigger>
       <SelectContent className="border-none bg-dark-200">

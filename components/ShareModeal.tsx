@@ -66,6 +66,7 @@ const ShareModal = ({
             Select which users can view and edit this document
           </DialogDescription>
         </DialogHeader>
+        
         <Label htmlFor="email" className="mt-6 text-blue-100">
           Email address
         </Label>
@@ -76,7 +77,7 @@ const ShareModal = ({
               placeholder="enter email address"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="shared-input"
+              className="share-input"
             />
             <UserTypeSelector userType={userType} setUserType={setUserType} />
           </div>
