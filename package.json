@@ -8,15 +8,20 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "peerDependencies": {
+    "@liveblocks/client": "^2.6.1",
+    "@liveblocks/node": "^2.6.1",
+    "@liveblocks/react": "^2.6.1",
+    "@liveblocks/react-lexical": "^2.6.1",
+    "@liveblocks/react-ui": "^2.6.1"
+  },
+  "resolutions": {
+    "@liveblocks/core": "2.6.1"
+  },
   "dependencies": {
     "@clerk/nextjs": "^5.4.1",
     "@clerk/themes": "^2.1.27",
     "@lexical/react": "^0.16.1",
-    "@liveblocks/client": "^2.6.0",
-    "@liveblocks/node": "^2.6.0",
-    "@liveblocks/react": "^2.6.0",
-    "@liveblocks/react-lexical": "^2.6.0",
-    "@liveblocks/react-ui": "^2.6.0",
     "@radix-ui/react-slot": "^1.1.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
@@ -24,7 +29,7 @@
     "lexical": "^0.16.1",
     "lucide-react": "^0.438.0",
     "nanoid": "^5.0.7",
-    "next": "14.2.7",
+    "next": "^14.2.8",
     "react": "^18",
     "react-dom": "^18",
     "tailwind-merge": "^2.5.2",
