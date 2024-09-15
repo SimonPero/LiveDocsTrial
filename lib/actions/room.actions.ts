@@ -5,7 +5,6 @@ import { liveblocks } from "../liveblocks";
 import { revalidatePath } from "next/cache";
 import { getAccessType, parseStringify } from "../utils";
 import { redirect } from "next/navigation";
-import { title } from "process";
 
 export const createDocument = async ({
   userId,

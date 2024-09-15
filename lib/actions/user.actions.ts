@@ -18,13 +18,15 @@ export const getClerkUsers = async ({ userIds }: { userIds: string[] }) => {
     }));
 
     const sortedUsers = userIds.map((email) =>
-      users.find((user) => user, email === email)
+      users.find((user) => user.email === email)
     );
+
     return parseStringify(sortedUsers);
   } catch (error) {
     console.log(`Error fetching users: ${error}`);
   }
 };
+
 
 export const getDocumentUsers = async ({
   roomId,
